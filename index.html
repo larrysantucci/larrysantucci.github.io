@@ -96,6 +96,19 @@
     .contact-links a { color: #fff; background: rgba(255,255,255,0.15); padding: 10px 20px; border-radius: 4px; font-weight: 400; transition: background 0.2s; }
     .contact-links a:hover { background: rgba(255,255,255,0.25); color: #fff; }
 
+  /* AI RESEARCH */
+  .ai-card { background: #fff; border-left: 4px solid #7b2d8e; border-radius: 4px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .ai-card h4 { color: #7b2d8e; margin: 0 0 4px; font-size: 1.15rem; }
+  .ai-card .ai-meta { font-size: 0.85rem; color: #777; margin-bottom: 10px; }
+  .ai-card p { margin-bottom: 12px; font-size: 0.95rem; }
+  .ai-buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+  .ai-buttons a { display: inline-flex; align-items: center; gap: 6px; background: #7b2d8e; color: #fff; padding: 8px 18px; border-radius: 4px; font-size: 0.88rem; font-weight: 400; transition: background 0.2s; }
+  .ai-buttons a:hover { background: #5e1f6e; color: #fff; }
+  .ai-buttons a.secondary { background: transparent; color: #7b2d8e; border: 1px solid #7b2d8e; }
+  .ai-buttons a.secondary:hover { background: rgba(123,45,142,0.08); }
+  .ai-intro { margin-bottom: 1.5rem; font-size: 1rem; line-height: 1.7; }
+  .ai-badge { display: inline-block; background: rgba(123,45,142,0.1); color: #7b2d8e; font-size: 0.78rem; font-weight: 700; padding: 2px 10px; border-radius: 10px; margin-left: 8px; vertical-align: middle; }
+    
     /* FOOTER */
     footer { background: #1a1a1a; color: rgba(255,255,255,0.6); padding: 24px 0; font-size: 0.8rem; text-align: center; line-height: 1.5; }
 
@@ -123,15 +136,16 @@
     <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav ul').classList.toggle('open')">
       <span></span><span></span><span></span>
     </button>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#creed">CREED</a></li>
-      <li><a href="#publications">Research</a></li>
-      <li><a href="#conferences">Conferences</a></li>
-      <li><a href="#media">Media</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#publications">Research</a></li>
+    <li><a href="#ai-research">AI Research</a></li>
+    <li><a href="#creed">CREED</a></li>
+    <li><a href="#conferences">Conferences</a></li>
+    <li><a href="#media">Media</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
   </div>
 </nav>
 
@@ -162,32 +176,6 @@
       <div class="hero-photo">
         <img src="Santucci_Larry_23_10.jpg" alt="Larry Santucci headshot">
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- CREED -->
-<section id="creed">
-  <div class="container">
-    <h2>CREED</h2>
-    <div class="creed-card">
-      <h3><a href="https://www.philadelphiafed.org/consumer-finance/creed" target="_blank" style="color: #1e6c93;">Center for the Restoration of Economic Data</a></h3>
-      <p>
-        CREED is a Federal Reserve Bank of Philadelphia initiative I co-founded that transforms
-        historical paper archives into research-ready datasets using OCR, digitization, and AI/ML
-        techniques. The project combines large language models with established methods to extract
-        structured data from historical documents at scale.
-      </p>
-      <p>
-        Our research demonstrates when modular LLM-based approaches outperform hyperspecialized
-        models for historical document analysis, and the resulting datasets enable new research on
-        topics including housing discrimination, wealth inequality, and economic history.
-      </p>
-      <p>
-        In August 2024, we hosted <em>From Rasters to Rows: New Methods and Applications in
-        Automated Data Extraction</em> at the Philadelphia Fed, bringing together researchers
-        working at the frontier of automated data extraction.
-      </p>
     </div>
   </div>
 </section>
@@ -433,7 +421,76 @@
     </ul>
   </div>
 </section>
+  
+<!-- AI-ASSISTED RESEARCH -->
+<section id="ai-research">
+  <div class="container">
+    <h2>AI-Assisted Research</h2>
+    <p class="ai-intro">
+      The projects below were conducted almost entirely by AI — specifically 
+      <a href="https://www.anthropic.com/claude" target="_blank">Claude</a> (Anthropic) — 
+      under my direction. I designed the research questions, provided guidance on methodology, 
+      and reviewed the output. The AI conducted the literature review, analysis, and writing. 
+      I share these to explore what's possible when researchers collaborate with AI 
+      and to be transparent about the process.
+    </p>
 
+    <!-- PROJECT 1 — replace with your actual content -->
+    <div class="ai-card">
+      <h4>Your Paper Title Here <span class="ai-badge">Claude Opus 4</span></h4>
+      <div class="ai-meta">2025 · Directed by Larry Santucci</div>
+      <p>
+        Brief description of what the paper covers — a sentence or two explaining the research 
+        question and key findings.
+      </p>
+      <div class="ai-buttons">
+        <a href="ai-research/your-paper-filename.pdf" target="_blank">📄 Paper</a>
+        <a href="ai-research/your-slides-filename.pdf" target="_blank" class="secondary">📊 Slides</a>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 — copy this card block for each additional project -->
+    <!--
+    <div class="ai-card">
+      <h4>Next Paper Title <span class="ai-badge">Claude Opus 4</span></h4>
+      <div class="ai-meta">2025 · Directed by Larry Santucci</div>
+      <p>Description here.</p>
+      <div class="ai-buttons">
+        <a href="ai-research/filename.pdf" target="_blank">📄 Paper</a>
+        <a href="ai-research/filename-slides.pdf" target="_blank" class="secondary">📊 Slides</a>
+      </div>
+    </div>
+    -->
+
+  </div>
+</section>
+  
+<!-- CREED -->
+<section id="creed">
+  <div class="container">
+    <h2>CREED</h2>
+    <div class="creed-card">
+      <h3><a href="https://www.philadelphiafed.org/consumer-finance/creed" target="_blank" style="color: #1e6c93;">Center for the Restoration of Economic Data</a></h3>
+      <p>
+        CREED is a Federal Reserve Bank of Philadelphia initiative I co-founded that transforms
+        historical paper archives into research-ready datasets using OCR, digitization, and AI/ML
+        techniques. The project combines large language models with established methods to extract
+        structured data from historical documents at scale.
+      </p>
+      <p>
+        Our research demonstrates when modular LLM-based approaches outperform hyperspecialized
+        models for historical document analysis, and the resulting datasets enable new research on
+        topics including housing discrimination, wealth inequality, and economic history.
+      </p>
+      <p>
+        In August 2024, we hosted <em>From Rasters to Rows: New Methods and Applications in
+        Automated Data Extraction</em> at the Philadelphia Fed, bringing together researchers
+        working at the frontier of automated data extraction.
+      </p>
+    </div>
+  </div>
+</section>
+  
 <!-- CONFERENCES & PRESENTATIONS -->
 <section id="conferences">
   <div class="container">
@@ -598,6 +655,7 @@
 </body>
 
 </html>
+
 
 
 
