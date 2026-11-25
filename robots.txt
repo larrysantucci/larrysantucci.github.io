@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://larrysantucci.github.io/sitemap.xml
